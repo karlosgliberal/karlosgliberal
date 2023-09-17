@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.box {
+  border: 1px solid #e3e3e3;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.04);
+  transition: box-shadow 0.15s ease;
+  display: block;
+  background: white;
+  border-radius: 4px;
+  overflow: hidden;
+}

@@ -1,0 +1,1979 @@
+{
+  "settings": { "opExample": [], "licence": "none", "isPublic": false },
+  "ops": [
+    {
+      "opId": "b0472a1d-db16-4ba6-8787-f300fbdc77bb",
+      "objName": "Ops.Gl.MainLoop",
+      "id": "7dc06287-60df-4556-a325-2c8ca1cba374",
+      "uiAttribs": {
+        "history": {
+          "createdAt": 1637941530147,
+          "createdBy": { "name": "ratsnake" },
+          "lastInteractionAt": 1672772929363,
+          "lastInteractionBy": { "name": "karlosgliberal" }
+        },
+        "translate": { "x": -108, "y": -1100 },
+        "extendTitle": ""
+      },
+      "portsIn": [
+        { "name": "FPS Limit", "value": 30 },
+        { "name": "Reduce FPS not focussed", "value": true },
+        { "name": "Reduce FPS loading", "value": false },
+        { "name": "Clear", "value": true },
+        { "name": "ClearAlpha", "value": false },
+        { "name": "Fullscreen Button", "value": false },
+        { "name": "Active", "value": true },
+        { "name": "Hires Displays", "value": true },
+        { "name": "Pixel Unit index", "value": 0 },
+        { "name": "Pixel Unit", "value": "Display" }
+      ],
+      "portsOut": [
+        {
+          "name": "trigger",
+          "links": [
+            {
+              "portIn": "render",
+              "portOut": "trigger",
+              "objIn": "5e6571b8-4a9d-4e5e-9901-891758c6d2f8",
+              "objOut": "7dc06287-60df-4556-a325-2c8ca1cba374"
+            }
+          ]
+        },
+        { "name": "width", "value": 1682 },
+        { "name": "height", "value": 1238 }
+      ]
+    },
+    {
+      "opId": "18a6d1f4-a7f8-4a3e-ab1d-0c2d2efe3861",
+      "objName": "Ops.Gl.Textures.CopyTexture",
+      "id": "4c9b3818-fd30-4028-9bab-6a7411346acb",
+      "uiAttribs": {
+        "history": {
+          "createdAt": 1637941545430,
+          "createdBy": { "name": "ratsnake" },
+          "lastInteractionAt": 1672774194151,
+          "lastInteractionBy": { "name": "karlosgliberal" }
+        },
+        "translate": { "x": -72, "y": 20 }
+      },
+      "portsIn": [
+        { "name": "render" },
+        { "name": "Texture" },
+        { "name": "Alpha Mask", "value": 0 },
+        { "name": "use original size", "value": true },
+        { "name": "width", "value": 1682 },
+        { "name": "height", "value": 1238 },
+        { "name": "filter index", "value": 1 },
+        { "name": "filter", "value": "nearest" },
+        { "name": "wrap index", "value": 0 },
+        { "name": "wrap", "value": "clamp to edge" },
+        { "name": "HDR", "value": false },
+        { "name": "Alpha Mask Source index", "value": 0 },
+        { "name": "Alpha Mask Source", "value": "A" },
+        { "name": "Convert Greyscale index", "value": 0 },
+        { "name": "Convert Greyscale", "value": "Off" },
+        { "name": "Invert R", "value": false },
+        { "name": "Invert G", "value": false },
+        { "name": "Invert B", "value": false },
+        { "name": "Invert A", "value": false }
+      ],
+      "portsOut": [
+        { "name": "trigger", "value": 0 },
+        {
+          "name": "texture_out",
+          "links": [
+            {
+              "portIn": "Image",
+              "portOut": "texture_out",
+              "objIn": "6bdf5c04-1bc0-45b1-b19b-6610fd23dbef",
+              "objOut": "4c9b3818-fd30-4028-9bab-6a7411346acb"
+            }
+          ]
+        },
+        { "name": "Aspect Ratio", "value": 1.358642972536349 }
+      ]
+    },
+    {
+      "opId": "a466bc1f-06e9-4595-8849-bffb9fe22f99",
+      "objName": "Ops.Sequence",
+      "id": "6397a647-4de4-4b6e-81bb-35152e6f4c74",
+      "uiAttribs": {
+        "history": {
+          "createdAt": 1637941558866,
+          "createdBy": { "name": "ratsnake" },
+          "lastInteractionAt": 1637941558866,
+          "lastInteractionBy": { "name": "ratsnake" }
+        },
+        "translate": { "x": -132, "y": -780 }
+      },
+      "portsIn": [
+        { "name": "exe" },
+        { "name": "Clean up connections", "value": 0 },
+        { "name": "exe 0", "value": 0 },
+        { "name": "exe 1", "value": 0 },
+        { "name": "exe 2", "value": 0 },
+        { "name": "exe 3", "value": 0 },
+        { "name": "exe 4", "value": 0 },
+        { "name": "exe 5", "value": 0 },
+        { "name": "exe 6", "value": 0 },
+        { "name": "exe 7", "value": 0 },
+        { "name": "exe 8", "value": 0 },
+        { "name": "exe 9", "value": 0 },
+        { "name": "exe 10", "value": 0 },
+        { "name": "exe 11", "value": 0 },
+        { "name": "exe 12", "value": 0 },
+        { "name": "exe 13", "value": 0 },
+        { "name": "exe 14", "value": 0 }
+      ],
+      "portsOut": [
+        {
+          "name": "trigger 0",
+          "links": [
+            {
+              "portIn": "Execute",
+              "portOut": "trigger 0",
+              "objIn": "e6a28bc7-7556-43b9-96bb-436d524fe316",
+              "objOut": "6397a647-4de4-4b6e-81bb-35152e6f4c74"
+            }
+          ]
+        },
+        {
+          "name": "trigger 1",
+          "links": [
+            {
+              "portIn": "Render",
+              "portOut": "trigger 1",
+              "objIn": "9788128c-c9fc-42f8-bea7-fbfe85f3c635",
+              "objOut": "6397a647-4de4-4b6e-81bb-35152e6f4c74"
+            }
+          ]
+        },
+        {
+          "name": "trigger 2",
+          "links": [
+            {
+              "portIn": "Exec",
+              "portOut": "trigger 2",
+              "objIn": "a06d651a-ea27-4f1d-9bc9-a2b4b72941cb",
+              "objOut": "6397a647-4de4-4b6e-81bb-35152e6f4c74"
+            }
+          ]
+        },
+        { "name": "trigger 3", "value": 0 },
+        { "name": "trigger 4", "value": 0 },
+        { "name": "trigger 5", "value": 0 },
+        { "name": "trigger 6", "value": 0 },
+        { "name": "trigger 7", "value": 0 },
+        {
+          "name": "trigger 8",
+          "links": [
+            {
+              "portIn": "exe",
+              "portOut": "trigger 8",
+              "objIn": "dce22f8f-7e9c-4a6b-9b4c-b36cc17dedeb",
+              "objOut": "6397a647-4de4-4b6e-81bb-35152e6f4c74"
+            }
+          ]
+        },
+        { "name": "trigger 9", "value": 0 },
+        { "name": "trigger 10", "value": 0 },
+        { "name": "trigger 11", "value": 0 },
+        { "name": "trigger 12", "value": 0 },
+        {
+          "name": "trigger 13",
+          "links": [
+            {
+              "portIn": "Render",
+              "portOut": "trigger 13",
+              "objIn": "adf2b32b-1e20-4b9d-aabe-8cfdcba29b40",
+              "objOut": "6397a647-4de4-4b6e-81bb-35152e6f4c74"
+            }
+          ]
+        },
+        { "name": "trigger 14", "value": 0 },
+        {
+          "name": "trigger 15",
+          "links": [
+            {
+              "portIn": "render",
+              "portOut": "trigger 15",
+              "objIn": "f4b3eb70-ccd2-4b0a-8f8f-6ff85793aab3",
+              "objOut": "6397a647-4de4-4b6e-81bb-35152e6f4c74"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "opId": "8f6b2f15-fcb0-4597-90c0-e5173f2969fe",
+      "objName": "Ops.Gl.TextureEffects.DrawImage_v3",
+      "id": "0afc2796-cdb5-4fed-b825-edf6e7e8b670",
+      "uiAttribs": {
+        "history": {
+          "createdAt": 1637942001423,
+          "createdBy": { "name": "ratsnake" },
+          "lastInteractionAt": 1663026692386,
+          "lastInteractionBy": { "name": "bbbbbgdn" }
+        },
+        "translate": { "x": -984, "y": 380 },
+        "extendTitle": null
+      },
+      "portsIn": [
+        { "name": "render" },
+        { "name": "blendMode index", "value": 0 },
+        { "name": "blendMode", "value": "normal" },
+        { "name": "amount", "value": 1 },
+        { "name": "Image" },
+        { "name": "Premultiplied", "value": false },
+        { "name": "Alpha Mask", "value": false },
+        { "name": "removeAlphaSrc", "value": false },
+        { "name": "Mask", "value": 0 },
+        { "name": "Mask Src index", "value": 1 },
+        { "name": "Mask Src", "value": "alpha channel" },
+        { "name": "Invert alpha channel", "value": false },
+        { "name": "Aspect Ratio", "value": true },
+        { "name": "Stretch Axis index", "value": 0 },
+        { "name": "Stretch Axis", "value": "X" },
+        { "name": "Position", "value": 0.6 },
+        { "name": "Crop", "value": true },
+        { "name": "flip x", "value": false },
+        { "name": "flip y", "value": false },
+        { "name": "Transform", "value": true },
+        { "name": "Scale X", "value": 1 },
+        { "name": "Scale Y", "value": 1 },
+        { "name": "Position X", "value": 0 },
+        { "name": "Position Y", "value": 0 },
+        { "name": "Rotation", "value": 0 },
+        { "name": "Clip Repeat", "value": false }
+      ],
+      "portsOut": [{ "name": "trigger", "value": 0 }]
+    },
+    {
+      "opId": "8f6b2f15-fcb0-4597-90c0-e5173f2969fe",
+      "objName": "Ops.Gl.TextureEffects.DrawImage_v3",
+      "id": "891ebaba-4fc1-458d-90bf-1899fddb36cd",
+      "uiAttribs": {
+        "history": {
+          "createdAt": 1637942001423,
+          "createdBy": { "name": "ratsnake" },
+          "lastInteractionAt": 1663533001751,
+          "lastInteractionBy": { "name": "bbbbbgdn" }
+        },
+        "translate": { "x": -216, "y": 80 }
+      },
+      "portsIn": [
+        { "name": "render" },
+        { "name": "blendMode index", "value": 0 },
+        { "name": "blendMode", "value": "normal" },
+        { "name": "amount", "value": 1 },
+        { "name": "Image" },
+        { "name": "Premultiplied", "value": false },
+        { "name": "Alpha Mask", "value": false },
+        { "name": "removeAlphaSrc", "value": false },
+        { "name": "Mask", "value": 0 },
+        { "name": "Mask Src index", "value": 1 },
+        { "name": "Mask Src", "value": "alpha channel" },
+        { "name": "Invert alpha channel", "value": false },
+        { "name": "Aspect Ratio", "value": false },
+        { "name": "Stretch Axis index", "value": 0 },
+        { "name": "Stretch Axis", "value": "X" },
+        { "name": "Position", "value": 0 },
+        { "name": "Crop", "value": false },
+        { "name": "flip x", "value": false },
+        { "name": "flip y", "value": false },
+        { "name": "Transform", "value": false },
+        { "name": "Scale X", "value": 1 },
+        { "name": "Scale Y", "value": 1 },
+        { "name": "Position X", "value": 0 },
+        { "name": "Position Y", "value": 0 },
+        { "name": "Rotation", "value": 0 },
+        { "name": "Clip Repeat", "value": false }
+      ],
+      "portsOut": [
+        {
+          "name": "trigger",
+          "links": [
+            {
+              "portIn": "Execute",
+              "portOut": "trigger",
+              "objIn": "12c81cd3-7093-4a75-b123-c480b03096c2",
+              "objOut": "891ebaba-4fc1-458d-90bf-1899fddb36cd"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "opId": "8f6b2f15-fcb0-4597-90c0-e5173f2969fe",
+      "objName": "Ops.Gl.TextureEffects.DrawImage_v3",
+      "id": "6bdf5c04-1bc0-45b1-b19b-6610fd23dbef",
+      "uiAttribs": {
+        "history": {
+          "createdAt": 1637942001423,
+          "createdBy": { "name": "ratsnake" },
+          "lastInteractionAt": 1663533062435,
+          "lastInteractionBy": { "name": "bbbbbgdn" }
+        },
+        "translate": { "x": -135.8958073450335, "y": 738.1270639630161 },
+        "extendTitle": null
+      },
+      "portsIn": [
+        { "name": "render" },
+        { "name": "blendMode index", "value": 0 },
+        { "name": "blendMode", "value": "normal" },
+        { "name": "amount", "value": 0.998 },
+        { "name": "Image" },
+        { "name": "Premultiplied", "value": true },
+        { "name": "Alpha Mask", "value": true },
+        { "name": "removeAlphaSrc", "value": true },
+        { "name": "Mask", "value": 0 },
+        { "name": "Mask Src index", "value": 1 },
+        { "name": "Mask Src", "value": "alpha channel" },
+        { "name": "Invert alpha channel", "value": false },
+        { "name": "Aspect Ratio", "value": false },
+        { "name": "Stretch Axis index", "value": 0 },
+        { "name": "Stretch Axis", "value": "X" },
+        { "name": "Position", "value": 0 },
+        { "name": "Crop", "value": false },
+        { "name": "flip x", "value": false },
+        { "name": "flip y", "value": false },
+        { "name": "Transform", "value": false },
+        { "name": "Scale X", "value": 1 },
+        { "name": "Scale Y", "value": 1 },
+        { "name": "Position X", "value": 0 },
+        { "name": "Position Y", "value": 0 },
+        { "name": "Rotation", "value": 0 },
+        { "name": "Clip Repeat", "value": false }
+      ],
+      "portsOut": [
+        {
+          "name": "trigger",
+          "links": [
+            {
+              "portIn": "render",
+              "portOut": "trigger",
+              "objIn": "34f1cea2-15c9-4654-9f21-9fb42bd18b80",
+              "objOut": "6bdf5c04-1bc0-45b1-b19b-6610fd23dbef"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "opId": "e890a050-11b7-456e-b09b-d08cd9c1ee41",
+      "objName": "Ops.Gl.TextureEffects.ImageCompose_v3",
+      "id": "9788128c-c9fc-42f8-bea7-fbfe85f3c635",
+      "uiAttribs": {
+        "history": {
+          "createdAt": 1637941533240,
+          "createdBy": { "name": "ratsnake" },
+          "lastInteractionAt": 1663533027174,
+          "lastInteractionBy": { "name": "bbbbbgdn" }
+        },
+        "translate": { "x": -984, "y": -160 }
+      },
+      "portsIn": [
+        { "name": "Render" },
+        { "name": "Base Texture", "value": 0 },
+        { "name": "Size index", "value": 0 },
+        { "name": "Size", "value": "Auto" },
+        { "name": "Width", "value": 640 },
+        { "name": "Height", "value": 480 },
+        { "name": "Filter index", "value": 1 },
+        { "name": "Filter", "value": "nearest" },
+        { "name": "Wrap index", "value": 1 },
+        { "name": "Wrap", "value": "clamp to edge" },
+        { "name": "Pixel Format index", "value": 0 },
+        { "name": "Pixel Format", "value": "RGBA 8bit ubyte" },
+        { "name": "R", "value": 0 },
+        { "name": "G", "value": 0 },
+        { "name": "B", "value": 0 },
+        { "name": "A", "value": 0 }
+      ],
+      "portsOut": [
+        {
+          "name": "Next",
+          "links": [
+            {
+              "portIn": "render",
+              "portOut": "Next",
+              "objIn": "0afc2796-cdb5-4fed-b825-edf6e7e8b670",
+              "objOut": "9788128c-c9fc-42f8-bea7-fbfe85f3c635"
+            }
+          ]
+        },
+        {
+          "name": "texture_out",
+          "links": [
+            {
+              "portIn": "Image",
+              "portOut": "texture_out",
+              "objIn": "891ebaba-4fc1-458d-90bf-1899fddb36cd",
+              "objOut": "9788128c-c9fc-42f8-bea7-fbfe85f3c635"
+            }
+          ]
+        },
+        { "name": "Aspect Ratio", "value": 1.358642972536349 },
+        { "name": "Texture Width", "value": 1682 },
+        { "name": "Texture Height", "value": 1238 }
+      ]
+    },
+    {
+      "opId": "e890a050-11b7-456e-b09b-d08cd9c1ee41",
+      "objName": "Ops.Gl.TextureEffects.ImageCompose_v3",
+      "id": "632f7461-3537-4bbe-98a5-776d2ab8cf94",
+      "uiAttribs": {
+        "history": {
+          "createdAt": 1637941533240,
+          "createdBy": { "name": "ratsnake" },
+          "lastInteractionAt": 1663533073266,
+          "lastInteractionBy": { "name": "bbbbbgdn" }
+        },
+        "translate": { "x": -216, "y": -60 }
+      },
+      "portsIn": [
+        { "name": "Render" },
+        { "name": "Base Texture", "value": 0 },
+        { "name": "Size index", "value": 0 },
+        { "name": "Size", "value": "Auto" },
+        { "name": "Width", "value": 640 },
+        { "name": "Height", "value": 480 },
+        { "name": "Filter index", "value": 1 },
+        { "name": "Filter", "value": "nearest" },
+        { "name": "Wrap index", "value": 1 },
+        { "name": "Wrap", "value": "repeat" },
+        { "name": "Pixel Format index", "value": 0 },
+        { "name": "Pixel Format", "value": "RGBA 8bit ubyte" },
+        { "name": "R", "value": 0 },
+        { "name": "G", "value": 0 },
+        { "name": "B", "value": 0 },
+        { "name": "A", "value": 0 }
+      ],
+      "portsOut": [
+        {
+          "name": "Next",
+          "links": [
+            {
+              "portIn": "render",
+              "portOut": "Next",
+              "objIn": "891ebaba-4fc1-458d-90bf-1899fddb36cd",
+              "objOut": "632f7461-3537-4bbe-98a5-776d2ab8cf94"
+            }
+          ]
+        },
+        {
+          "name": "texture_out",
+          "links": [
+            {
+              "portIn": "Texture",
+              "portOut": "texture_out",
+              "objIn": "4c9b3818-fd30-4028-9bab-6a7411346acb",
+              "objOut": "632f7461-3537-4bbe-98a5-776d2ab8cf94"
+            },
+            {
+              "portIn": "Image",
+              "portOut": "texture_out",
+              "objIn": "72077bac-cc42-45ea-887b-593a92e196b2",
+              "objOut": "632f7461-3537-4bbe-98a5-776d2ab8cf94"
+            },
+            {
+              "portIn": "Image",
+              "portOut": "texture_out",
+              "objIn": "d4bb7015-4f62-447d-b208-2e3d6da91a56",
+              "objOut": "632f7461-3537-4bbe-98a5-776d2ab8cf94"
+            }
+          ]
+        },
+        { "name": "Aspect Ratio", "value": 1.358642972536349 },
+        { "name": "Texture Width", "value": 1682 },
+        { "name": "Texture Height", "value": 1238 }
+      ]
+    },
+    {
+      "opId": "c00f79f2-0505-4b4f-b0bf-10ef7875dd87",
+      "objName": "Ops.Gl.TextureEffects.PixelDisplacement_v4",
+      "id": "34f1cea2-15c9-4654-9f21-9fb42bd18b80",
+      "uiAttribs": {
+        "history": {
+          "createdAt": 1637941541851,
+          "createdBy": { "name": "ratsnake" },
+          "lastInteractionAt": 1672774083225,
+          "lastInteractionBy": { "name": "karlosgliberal" }
+        },
+        "translate": { "x": -132, "y": 1360 }
+      },
+      "portsIn": [
+        { "name": "render" },
+        { "name": "displaceTex" },
+        { "name": "Blend Mode index", "value": 0 },
+        { "name": "Blend Mode", "value": "normal" },
+        { "name": "Amount", "value": 1 },
+        { "name": "amount X" },
+        { "name": "amount Y" },
+        { "name": "Wrap index", "value": 0 },
+        { "name": "Wrap", "value": "Mirror" },
+        { "name": "Input index", "value": 0 },
+        { "name": "Input", "value": "RedGreen" },
+        { "name": "Zero Displace index", "value": 0 },
+        { "name": "Zero Displace", "value": "Black" }
+      ],
+      "portsOut": [
+        {
+          "name": "trigger",
+          "links": [
+            {
+              "portIn": "render",
+              "portOut": "trigger",
+              "objIn": "56cb9de4-d0f5-4049-8868-bdc30ad54c6b",
+              "objOut": "34f1cea2-15c9-4654-9f21-9fb42bd18b80"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "opId": "255bd15b-cc91-4a12-9b4e-53c710cbb282",
+      "objName": "Ops.Gl.Meshes.FullscreenRectangle",
+      "id": "f4b3eb70-ccd2-4b0a-8f8f-6ff85793aab3",
+      "uiAttribs": {
+        "history": {
+          "createdAt": 1663017639435,
+          "createdBy": { "name": "bbbbbgdn" },
+          "lastInteractionAt": 1663018709523,
+          "lastInteractionBy": { "name": "bbbbbgdn" }
+        },
+        "translate": { "x": 1116, "y": -180 }
+      },
+      "portsIn": [
+        { "name": "render" },
+        { "name": "Scale index", "value": 0 },
+        { "name": "Scale", "value": "Stretch" },
+        { "name": "Flip Y", "value": false },
+        { "name": "Flip X", "value": false },
+        { "name": "Texture" }
+      ],
+      "portsOut": [{ "name": "trigger", "value": 0 }]
+    },
+    {
+      "opId": "0f203337-e13c-47ec-a09f-b309212540b0",
+      "objName": "Ops.Math.Delta",
+      "id": "e7a69e1f-a7d2-4bc1-bd58-3c07a4bbe7cb",
+      "uiAttribs": {
+        "history": {
+          "createdAt": 1663020334008,
+          "createdBy": { "name": "bbbbbgdn" },
+          "lastInteractionAt": 1672775052176,
+          "lastInteractionBy": { "name": "karlosgliberal" }
+        },
+        "translate": { "x": 120, "y": 920 }
+      },
+      "portsIn": [
+        { "name": "Value" },
+        { "name": "Change Always", "value": true },
+        { "name": "Reset", "value": null }
+      ],
+      "portsOut": [
+        {
+          "name": "Delta",
+          "links": [
+            {
+              "portIn": "value",
+              "portOut": "Delta",
+              "objIn": "1799d51d-bebe-4dfe-8f41-a104fb2388c9",
+              "objOut": "e7a69e1f-a7d2-4bc1-bd58-3c07a4bbe7cb"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "opId": "2b60d12d-2884-4ad0-bda4-0caeb6882f5c",
+      "objName": "Ops.Ui.VizNumber",
+      "id": "51af8377-f735-4c28-ac16-8765db9033b3",
+      "uiAttribs": {
+        "widthOnlyGrow": true,
+        "history": {
+          "createdAt": 1663021138827,
+          "createdBy": { "name": "bbbbbgdn" },
+          "lastInteractionAt": 1663026176567,
+          "lastInteractionBy": { "name": "bbbbbgdn" }
+        },
+        "translate": { "x": -370.9397349505581, "y": 372.69544449758166 },
+        "extendTitle": " 0.2"
+      },
+      "portsIn": [{ "name": "Number" }],
+      "portsOut": [
+        {
+          "name": "Result",
+          "links": [
+            {
+              "portIn": "new max",
+              "portOut": "Result",
+              "objIn": "e4f730fd-6fe7-4e8b-9500-711173a492ce",
+              "objOut": "51af8377-f735-4c28-ac16-8765db9033b3"
+            },
+            {
+              "portIn": "new max",
+              "portOut": "Result",
+              "objIn": "1799d51d-bebe-4dfe-8f41-a104fb2388c9",
+              "objOut": "51af8377-f735-4c28-ac16-8765db9033b3"
+            },
+            {
+              "portIn": "Value",
+              "portOut": "Result",
+              "objIn": "d073d8c3-5bd3-4c17-8473-e9d7368bc5b7",
+              "objOut": "51af8377-f735-4c28-ac16-8765db9033b3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "opId": "a466bc1f-06e9-4595-8849-bffb9fe22f99",
+      "objName": "Ops.Sequence",
+      "id": "bba9a224-18ba-41fd-ab1f-09f493f98047",
+      "uiAttribs": {
+        "history": {
+          "createdAt": 1663023092287,
+          "createdBy": { "name": "bbbbbgdn" },
+          "lastInteractionAt": 1663023092287,
+          "lastInteractionBy": { "name": "bbbbbgdn" }
+        },
+        "translate": { "x": -132, "y": -160 }
+      },
+      "portsIn": [
+        { "name": "exe" },
+        { "name": "Clean up connections", "value": 0 },
+        { "name": "exe 0", "value": null },
+        { "name": "exe 1", "value": 0 },
+        { "name": "exe 2", "value": 0 },
+        { "name": "exe 3", "value": 0 },
+        { "name": "exe 4", "value": 0 },
+        { "name": "exe 5", "value": 0 },
+        { "name": "exe 6", "value": 0 },
+        { "name": "exe 7", "value": 0 },
+        { "name": "exe 8", "value": 0 },
+        { "name": "exe 9", "value": 0 },
+        { "name": "exe 10", "value": 0 },
+        { "name": "exe 11", "value": 0 },
+        { "name": "exe 12", "value": 0 },
+        { "name": "exe 13", "value": 0 },
+        { "name": "exe 14", "value": 0 }
+      ],
+      "portsOut": [
+        {
+          "name": "trigger 0",
+          "links": [
+            {
+              "portIn": "Render",
+              "portOut": "trigger 0",
+              "objIn": "632f7461-3537-4bbe-98a5-776d2ab8cf94",
+              "objOut": "bba9a224-18ba-41fd-ab1f-09f493f98047"
+            }
+          ]
+        },
+        { "name": "trigger 1", "value": 0 },
+        {
+          "name": "trigger 2",
+          "links": [
+            {
+              "portIn": "render",
+              "portOut": "trigger 2",
+              "objIn": "4c9b3818-fd30-4028-9bab-6a7411346acb",
+              "objOut": "bba9a224-18ba-41fd-ab1f-09f493f98047"
+            }
+          ]
+        },
+        {
+          "name": "trigger 3",
+          "links": [
+            {
+              "portIn": "Render",
+              "portOut": "trigger 3",
+              "objIn": "49dfc9b1-5b64-489c-9f02-6ea789a4b8e9",
+              "objOut": "bba9a224-18ba-41fd-ab1f-09f493f98047"
+            }
+          ]
+        },
+        { "name": "trigger 4", "value": 0 },
+        { "name": "trigger 5", "value": 0 },
+        { "name": "trigger 6", "value": 0 },
+        { "name": "trigger 7", "value": 0 },
+        { "name": "trigger 8", "value": 0 },
+        { "name": "trigger 9", "value": 0 },
+        { "name": "trigger 10", "value": 0 },
+        { "name": "trigger 11", "value": 0 },
+        { "name": "trigger 12", "value": 0 },
+        { "name": "trigger 13", "value": 0 },
+        { "name": "trigger 14", "value": 0 },
+        { "name": "trigger 15", "value": 0 }
+      ]
+    },
+    {
+      "opId": "04fd113f-ade1-43fb-99fa-f8825f8814c0",
+      "objName": "Ops.Math.Compare.LessThan",
+      "id": "4f28b484-23d1-4a68-8067-26acd8bc2bc0",
+      "uiAttribs": {
+        "title": "<",
+        "history": {
+          "createdAt": 1663026520739,
+          "createdBy": { "name": "bbbbbgdn" },
+          "lastInteractionAt": 1684741493798,
+          "lastInteractionBy": { "name": "karlosgliberal" }
+        },
+        "translate": { "x": -156, "y": -380 }
+      },
+      "portsIn": [{ "name": "number1" }, { "name": "number2", "value": 0.2 }],
+      "portsOut": [
+        {
+          "name": "result",
+          "links": [
+            {
+              "portIn": "Pass Through",
+              "portOut": "result",
+              "objIn": "e6a28bc7-7556-43b9-96bb-436d524fe316",
+              "objOut": "4f28b484-23d1-4a68-8067-26acd8bc2bc0"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "opId": "5a681c35-78ce-4cb3-9858-bc79c34c6819",
+      "objName": "Ops.Sidebar.Sidebar",
+      "id": "624ca827-0472-4eb6-951c-b109b5c4a621",
+      "uiAttribs": {
+        "history": {
+          "createdAt": 1663113638022,
+          "createdBy": { "name": "bbbbbgdn" },
+          "lastInteractionAt": 1664985984295,
+          "lastInteractionBy": { "name": "bbbbbgdn" }
+        },
+        "translate": { "x": -864, "y": -820 }
+      },
+      "portsIn": [
+        { "name": "Visible" },
+        { "name": "Opacity", "value": 1 },
+        { "name": "Default Minimized", "value": false },
+        { "name": "Minimized Opacity", "value": 1 },
+        { "name": "Show undo button", "value": false },
+        { "name": "Show Minimize", "value": false },
+        { "name": "Title", "value": "Displaced pixels" },
+        { "name": "Side", "value": true }
+      ],
+      "portsOut": [
+        {
+          "name": "childs",
+          "links": [
+            {
+              "portIn": "link",
+              "portOut": "childs",
+              "objIn": "0352d829-cedc-4831-85d6-50fe393d92ee",
+              "objOut": "624ca827-0472-4eb6-951c-b109b5c4a621"
+            }
+          ]
+        },
+        { "name": "Opfened", "value": false }
+      ]
+    },
+    {
+      "opId": "942ef040-9be9-4848-9122-61cb28cb7789",
+      "objName": "Ops.Gl.TextureEffects.ScaleTexture_v2",
+      "id": "56cb9de4-d0f5-4049-8868-bdc30ad54c6b",
+      "uiAttribs": {
+        "history": {
+          "createdAt": 1663114489848,
+          "createdBy": { "name": "bbbbbgdn" },
+          "lastInteractionAt": 1672773869392,
+          "lastInteractionBy": { "name": "karlosgliberal" }
+        },
+        "translate": { "x": -132, "y": 1500 }
+      },
+      "portsIn": [
+        { "name": "render" },
+        { "name": "Multiplier", "value": 0 },
+        { "name": "Blend Mode index", "value": 0 },
+        { "name": "Blend Mode", "value": "normal" },
+        { "name": "Amount", "value": 1 },
+        { "name": "Scale X" },
+        { "name": "Scale Y", "value": 1.02 },
+        { "name": "offset X", "value": 0 },
+        { "name": "offset Y", "value": 0 },
+        { "name": "center X", "value": 0.5 },
+        { "name": "center Y", "value": 0.5 },
+        { "name": "Clear", "value": true }
+      ],
+      "portsOut": [
+        {
+          "name": "trigger",
+          "links": [
+            {
+              "portIn": "render",
+              "portOut": "trigger",
+              "objIn": "db037328-369f-4884-a43b-83908c534ffe",
+              "objOut": "56cb9de4-d0f5-4049-8868-bdc30ad54c6b"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "opId": "74730122-5cba-4d0d-b610-df334ec6220a",
+      "objName": "Ops.Sidebar.Slider_v3",
+      "id": "0352d829-cedc-4831-85d6-50fe393d92ee",
+      "uiAttribs": {
+        "title": "Slider: zoom speed",
+        "history": {
+          "createdAt": 1663116299309,
+          "createdBy": { "name": "bbbbbgdn" },
+          "lastInteractionAt": 1663533285961,
+          "lastInteractionBy": { "name": "bbbbbgdn" }
+        },
+        "translate": { "x": -876, "y": -560 }
+      },
+      "portsIn": [
+        { "name": "link" },
+        { "name": "Text", "value": "zoom speed" },
+        { "name": "Min", "value": 0.95 },
+        { "name": "Max", "value": 1.05 },
+        { "name": "Step", "value": 0.00001 },
+        { "name": "Suffix", "value": "" },
+        { "name": "Grey Out", "value": false },
+        { "name": "Visible", "value": true },
+        { "name": "Input", "value": 1.02114 },
+        { "name": "Set Default", "value": null },
+        { "name": "Reset", "value": 0 },
+        { "name": "Default", "value": 1.02114 }
+      ],
+      "portsOut": [
+        {
+          "name": "childs",
+          "links": [
+            {
+              "portIn": "link",
+              "portOut": "childs",
+              "objIn": "97980da9-ffc8-4f24-90cd-b0d0f9340e0e",
+              "objOut": "0352d829-cedc-4831-85d6-50fe393d92ee"
+            }
+          ]
+        },
+        {
+          "name": "Result",
+          "links": [
+            {
+              "portIn": "Scale X",
+              "portOut": "Result",
+              "objIn": "56cb9de4-d0f5-4049-8868-bdc30ad54c6b",
+              "objOut": "0352d829-cedc-4831-85d6-50fe393d92ee"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "opId": "74730122-5cba-4d0d-b610-df334ec6220a",
+      "objName": "Ops.Sidebar.Slider_v3",
+      "id": "97980da9-ffc8-4f24-90cd-b0d0f9340e0e",
+      "uiAttribs": {
+        "title": "Slider: pixel speed",
+        "history": {
+          "createdAt": 1663116299309,
+          "createdBy": { "name": "bbbbbgdn" },
+          "lastInteractionAt": 1663533293449,
+          "lastInteractionBy": { "name": "bbbbbgdn" }
+        },
+        "translate": { "x": -877.6970587338168, "y": -499.49284982547397 }
+      },
+      "portsIn": [
+        { "name": "link" },
+        { "name": "Text", "value": "pixel speed" },
+        { "name": "Min", "value": 0 },
+        { "name": "Max", "value": 1 },
+        { "name": "Step", "value": 0.00001 },
+        { "name": "Suffix", "value": "" },
+        { "name": "Grey Out", "value": false },
+        { "name": "Visible", "value": true },
+        { "name": "Input", "value": 0.2 },
+        { "name": "Set Default", "value": null },
+        { "name": "Reset", "value": 0 },
+        { "name": "Default", "value": 0.2 }
+      ],
+      "portsOut": [
+        { "name": "childs" },
+        {
+          "name": "Result",
+          "links": [
+            {
+              "portIn": "Number",
+              "portOut": "Result",
+              "objIn": "51af8377-f735-4c28-ac16-8765db9033b3",
+              "objOut": "97980da9-ffc8-4f24-90cd-b0d0f9340e0e"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "opId": "2617b407-60a0-4ff6-b4a7-18136cfa7817",
+      "objName": "Ops.Math.MapRange",
+      "id": "1799d51d-bebe-4dfe-8f41-a104fb2388c9",
+      "uiAttribs": {
+        "history": {
+          "createdAt": 1663156415090,
+          "createdBy": { "name": "bbbbbgdn" },
+          "lastInteractionAt": 1663156440272,
+          "lastInteractionBy": { "name": "bbbbbgdn" }
+        },
+        "translate": { "x": 96, "y": 1220 }
+      },
+      "portsIn": [
+        { "name": "value" },
+        { "name": "old min", "value": -1 },
+        { "name": "old max", "value": 1 },
+        { "name": "new min" },
+        { "name": "new max" },
+        { "name": "Easing index", "value": 0 },
+        { "name": "Easing", "value": "Linear" }
+      ],
+      "portsOut": [
+        {
+          "name": "result",
+          "links": [
+            {
+              "portIn": "amount Y",
+              "portOut": "result",
+              "objIn": "34f1cea2-15c9-4654-9f21-9fb42bd18b80",
+              "objOut": "1799d51d-bebe-4dfe-8f41-a104fb2388c9"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "opId": "2617b407-60a0-4ff6-b4a7-18136cfa7817",
+      "objName": "Ops.Math.MapRange",
+      "id": "e4f730fd-6fe7-4e8b-9500-711173a492ce",
+      "uiAttribs": {
+        "history": {
+          "createdAt": 1663156415090,
+          "createdBy": { "name": "bbbbbgdn" },
+          "lastInteractionAt": 1663156435279,
+          "lastInteractionBy": { "name": "bbbbbgdn" }
+        },
+        "translate": { "x": -72, "y": 1200 }
+      },
+      "portsIn": [
+        { "name": "value" },
+        { "name": "old min", "value": -1 },
+        { "name": "old max", "value": 1 },
+        { "name": "new min" },
+        { "name": "new max" },
+        { "name": "Easing index", "value": 0 },
+        { "name": "Easing", "value": "Linear" }
+      ],
+      "portsOut": [
+        {
+          "name": "result",
+          "links": [
+            {
+              "portIn": "amount X",
+              "portOut": "result",
+              "objIn": "34f1cea2-15c9-4654-9f21-9fb42bd18b80",
+              "objOut": "e4f730fd-6fe7-4e8b-9500-711173a492ce"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "opId": "ce1eaf2b-943b-4dc0-ab5e-ee11b63c9ed0",
+      "objName": "Ops.Trigger.TriggerSend",
+      "id": "6dc858d5-0586-449b-838a-26c9a315f8c5",
+      "uiAttribs": {
+        "title": ">Clear",
+        "history": {
+          "createdAt": 1663533910535,
+          "createdBy": { "name": "bbbbbgdn" },
+          "lastInteractionAt": 1663533918182,
+          "lastInteractionBy": { "name": "bbbbbgdn" }
+        },
+        "translate": { "x": -708, "y": -780 }
+      },
+      "portsIn": [
+        { "name": "Trigger" },
+        { "name": "Named Trigger", "value": "Clear" }
+      ],
+      "portsOut": []
+    },
+    {
+      "opId": "f069c0db-4051-4eae-989e-6ef7953787fd",
+      "objName": "Ops.Devices.Keyboard.KeyPressLearn",
+      "id": "d5b1532a-1404-4278-817b-8734b843a2b9",
+      "uiAttribs": {
+        "history": {
+          "createdAt": 1663027349115,
+          "createdBy": { "name": "bbbbbgdn" },
+          "lastInteractionAt": 1664977179469,
+          "lastInteractionBy": { "name": "bbbbbgdn" }
+        },
+        "translate": { "x": -708, "y": -880 },
+        "extendTitle": "R"
+      },
+      "portsIn": [
+        { "name": "key code", "value": 82 },
+        { "name": "canvas only", "value": false },
+        { "name": "Mod Key index", "value": 0 },
+        { "name": "Mod Key", "value": "none" },
+        { "name": "Enabled", "value": true },
+        { "name": "Prevent Default", "value": false },
+        { "name": "learn", "value": 0 }
+      ],
+      "portsOut": [
+        { "name": "on press", "value": 0 },
+        {
+          "name": "on release",
+          "links": [
+            {
+              "portIn": "Trigger",
+              "portOut": "on release",
+              "objIn": "6dc858d5-0586-449b-838a-26c9a315f8c5",
+              "objOut": "d5b1532a-1404-4278-817b-8734b843a2b9"
+            }
+          ]
+        },
+        { "name": "Pressed", "value": 0 },
+        { "name": "Key", "value": "R" }
+      ]
+    },
+    {
+      "opId": "f069c0db-4051-4eae-989e-6ef7953787fd",
+      "objName": "Ops.Devices.Keyboard.KeyPressLearn",
+      "id": "56580b41-7ed1-4f82-a554-dfa49aaaf3d8",
+      "uiAttribs": {
+        "history": {
+          "createdAt": 1664467804467,
+          "createdBy": { "name": "bbbbbgdn" },
+          "lastInteractionAt": 1664977175537,
+          "lastInteractionBy": { "name": "bbbbbgdn" }
+        },
+        "translate": { "x": -876, "y": -1140 },
+        "extendTitle": "I"
+      },
+      "portsIn": [
+        { "name": "key code", "value": 73 },
+        { "name": "canvas only", "value": false },
+        { "name": "Mod Key index", "value": 0 },
+        { "name": "Mod Key", "value": "none" },
+        { "name": "Enabled", "value": true },
+        { "name": "Prevent Default", "value": false },
+        { "name": "learn", "value": 0 }
+      ],
+      "portsOut": [
+        { "name": "on press", "value": 0 },
+        {
+          "name": "on release",
+          "links": [
+            {
+              "portIn": "trigger",
+              "portOut": "on release",
+              "objIn": "52ff8fbd-88d9-48f0-9183-d3e497450eeb",
+              "objOut": "56580b41-7ed1-4f82-a554-dfa49aaaf3d8"
+            }
+          ]
+        },
+        { "name": "Pressed", "value": 0 },
+        { "name": "Key", "value": "I" }
+      ]
+    },
+    {
+      "opId": "712a25f4-3a93-4042-b8c5-2f56169186cc",
+      "objName": "Ops.Boolean.ToggleBool",
+      "id": "52ff8fbd-88d9-48f0-9183-d3e497450eeb",
+      "uiAttribs": {
+        "history": {
+          "createdAt": 1664467867463,
+          "createdBy": { "name": "bbbbbgdn" },
+          "lastInteractionAt": 1664467867463,
+          "lastInteractionBy": { "name": "bbbbbgdn" }
+        },
+        "translate": { "x": -864, "y": -940 }
+      },
+      "portsIn": [
+        { "name": "trigger" },
+        { "name": "reset", "value": 0 },
+        { "name": "Default", "value": false }
+      ],
+      "portsOut": [
+        {
+          "name": "result",
+          "links": [
+            {
+              "portIn": "Visible",
+              "portOut": "result",
+              "objIn": "624ca827-0472-4eb6-951c-b109b5c4a621",
+              "objOut": "52ff8fbd-88d9-48f0-9183-d3e497450eeb"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "opId": "e890a050-11b7-456e-b09b-d08cd9c1ee41",
+      "objName": "Ops.Gl.TextureEffects.ImageCompose_v3",
+      "id": "49dfc9b1-5b64-489c-9f02-6ea789a4b8e9",
+      "uiAttribs": {
+        "history": {
+          "createdAt": 1669176554982,
+          "createdBy": { "name": "bbbbbgdn" },
+          "lastInteractionAt": 1669176554982,
+          "lastInteractionBy": { "name": "bbbbbgdn" }
+        },
+        "translate": { "x": 96, "y": 180 }
+      },
+      "portsIn": [
+        { "name": "Render" },
+        { "name": "Base Texture", "value": 0 },
+        { "name": "Size index", "value": 0 },
+        { "name": "Size", "value": "Auto" },
+        { "name": "Width", "value": 640 },
+        { "name": "Height", "value": 480 },
+        { "name": "Filter index", "value": 1 },
+        { "name": "Filter", "value": "nearest" },
+        { "name": "Wrap index", "value": 1 },
+        { "name": "Wrap", "value": "clamp to edge" },
+        { "name": "Pixel Format index", "value": 0 },
+        { "name": "Pixel Format", "value": "RGBA 8bit ubyte" },
+        { "name": "R", "value": 0 },
+        { "name": "G", "value": 0 },
+        { "name": "B", "value": 0 },
+        { "name": "A", "value": 0 }
+      ],
+      "portsOut": [
+        {
+          "name": "Next",
+          "links": [
+            {
+              "portIn": "render",
+              "portOut": "Next",
+              "objIn": "72077bac-cc42-45ea-887b-593a92e196b2",
+              "objOut": "49dfc9b1-5b64-489c-9f02-6ea789a4b8e9"
+            }
+          ]
+        },
+        {
+          "name": "texture_out",
+          "links": [
+            {
+              "portIn": "displaceTex",
+              "portOut": "texture_out",
+              "objIn": "34f1cea2-15c9-4654-9f21-9fb42bd18b80",
+              "objOut": "49dfc9b1-5b64-489c-9f02-6ea789a4b8e9"
+            }
+          ]
+        },
+        { "name": "Aspect Ratio", "value": 1.358642972536349 },
+        { "name": "Texture Width", "value": 1682 },
+        { "name": "Texture Height", "value": 1238 }
+      ]
+    },
+    {
+      "opId": "8f6b2f15-fcb0-4597-90c0-e5173f2969fe",
+      "objName": "Ops.Gl.TextureEffects.DrawImage_v3",
+      "id": "72077bac-cc42-45ea-887b-593a92e196b2",
+      "uiAttribs": {
+        "history": {
+          "createdAt": 1669176555078,
+          "createdBy": { "name": "bbbbbgdn" },
+          "lastInteractionAt": 1669176555078,
+          "lastInteractionBy": { "name": "bbbbbgdn" }
+        },
+        "translate": { "x": 108, "y": 420 },
+        "extendTitle": null
+      },
+      "portsIn": [
+        { "name": "render" },
+        { "name": "blendMode index", "value": 0 },
+        { "name": "blendMode", "value": "normal" },
+        { "name": "amount", "value": 1 },
+        { "name": "Image" },
+        { "name": "Premultiplied", "value": false },
+        { "name": "Alpha Mask", "value": false },
+        { "name": "removeAlphaSrc", "value": false },
+        { "name": "Mask", "value": 0 },
+        { "name": "Mask Src index", "value": 1 },
+        { "name": "Mask Src", "value": "alpha channel" },
+        { "name": "Invert alpha channel", "value": false },
+        { "name": "Aspect Ratio", "value": false },
+        { "name": "Stretch Axis index", "value": 0 },
+        { "name": "Stretch Axis", "value": "X" },
+        { "name": "Position", "value": 0 },
+        { "name": "Crop", "value": false },
+        { "name": "flip x", "value": false },
+        { "name": "flip y", "value": false },
+        { "name": "Transform", "value": false },
+        { "name": "Scale X", "value": 1 },
+        { "name": "Scale Y", "value": 1 },
+        { "name": "Position X", "value": 0 },
+        { "name": "Position Y", "value": 0 },
+        { "name": "Rotation", "value": 0 },
+        { "name": "Clip Repeat", "value": false }
+      ],
+      "portsOut": [{ "name": "trigger", "value": 0 }]
+    },
+    {
+      "opId": "e890a050-11b7-456e-b09b-d08cd9c1ee41",
+      "objName": "Ops.Gl.TextureEffects.ImageCompose_v3",
+      "id": "adf2b32b-1e20-4b9d-aabe-8cfdcba29b40",
+      "uiAttribs": {
+        "history": {
+          "createdAt": 1669176587686,
+          "createdBy": { "name": "bbbbbgdn" },
+          "lastInteractionAt": 1669176587686,
+          "lastInteractionBy": { "name": "bbbbbgdn" }
+        },
+        "translate": { "x": 600, "y": -140 }
+      },
+      "portsIn": [
+        { "name": "Render" },
+        { "name": "Base Texture", "value": 0 },
+        { "name": "Size index", "value": 0 },
+        { "name": "Size", "value": "Auto" },
+        { "name": "Width", "value": 640 },
+        { "name": "Height", "value": 480 },
+        { "name": "Filter index", "value": 1 },
+        { "name": "Filter", "value": "linear" },
+        { "name": "Wrap index", "value": 1 },
+        { "name": "Wrap", "value": "repeat" },
+        { "name": "Pixel Format index", "value": 0 },
+        { "name": "Pixel Format", "value": "RGBA 8bit ubyte" },
+        { "name": "R", "value": 0 },
+        { "name": "G", "value": 0 },
+        { "name": "B", "value": 0 },
+        { "name": "A", "value": 0 }
+      ],
+      "portsOut": [
+        {
+          "name": "Next",
+          "links": [
+            {
+              "portIn": "render",
+              "portOut": "Next",
+              "objIn": "d4bb7015-4f62-447d-b208-2e3d6da91a56",
+              "objOut": "adf2b32b-1e20-4b9d-aabe-8cfdcba29b40"
+            }
+          ]
+        },
+        {
+          "name": "texture_out",
+          "links": [
+            {
+              "portIn": "Texture",
+              "portOut": "texture_out",
+              "objIn": "f4b3eb70-ccd2-4b0a-8f8f-6ff85793aab3",
+              "objOut": "adf2b32b-1e20-4b9d-aabe-8cfdcba29b40"
+            }
+          ]
+        },
+        { "name": "Aspect Ratio", "value": 1.358642972536349 },
+        { "name": "Texture Width", "value": 1682 },
+        { "name": "Texture Height", "value": 1238 }
+      ]
+    },
+    {
+      "opId": "8f6b2f15-fcb0-4597-90c0-e5173f2969fe",
+      "objName": "Ops.Gl.TextureEffects.DrawImage_v3",
+      "id": "d4bb7015-4f62-447d-b208-2e3d6da91a56",
+      "uiAttribs": {
+        "history": {
+          "createdAt": 1669176555078,
+          "createdBy": { "name": "bbbbbgdn" },
+          "lastInteractionAt": 1669176555078,
+          "lastInteractionBy": { "name": "bbbbbgdn" }
+        },
+        "translate": { "x": 600, "y": 120 },
+        "extendTitle": null
+      },
+      "portsIn": [
+        { "name": "render" },
+        { "name": "blendMode index", "value": 0 },
+        { "name": "blendMode", "value": "normal" },
+        { "name": "amount", "value": 1 },
+        { "name": "Image" },
+        { "name": "Premultiplied", "value": false },
+        { "name": "Alpha Mask", "value": false },
+        { "name": "removeAlphaSrc", "value": false },
+        { "name": "Mask", "value": 0 },
+        { "name": "Mask Src index", "value": 1 },
+        { "name": "Mask Src", "value": "alpha channel" },
+        { "name": "Invert alpha channel", "value": false },
+        { "name": "Aspect Ratio", "value": false },
+        { "name": "Stretch Axis index", "value": 0 },
+        { "name": "Stretch Axis", "value": "X" },
+        { "name": "Position", "value": 0 },
+        { "name": "Crop", "value": false },
+        { "name": "flip x", "value": false },
+        { "name": "flip y", "value": false },
+        { "name": "Transform", "value": false },
+        { "name": "Scale X", "value": 1 },
+        { "name": "Scale Y", "value": 1 },
+        { "name": "Position X", "value": 0 },
+        { "name": "Position Y", "value": 0 },
+        { "name": "Rotation", "value": 0 },
+        { "name": "Clip Repeat", "value": false }
+      ],
+      "portsOut": [{ "name": "trigger", "value": 0 }]
+    },
+    {
+      "opId": "790f3702-9833-464e-8e37-6f0f813f7e16",
+      "objName": "Ops.Gl.Texture_v2",
+      "id": "997b5b5b-120b-4f24-9a4b-9267675699e2",
+      "uiAttribs": {
+        "translate": { "x": -972, "y": 300 },
+        "history": {
+          "createdAt": 1672771589345,
+          "createdBy": { "name": "karlosgliberal" },
+          "lastInteractionAt": 1684741111518,
+          "lastInteractionBy": { "name": "karlosgliberal" }
+        },
+        "extendTitle": "bikolabs"
+      },
+      "portsIn": [
+        {
+          "name": "File",
+          "value": "/assets/646b1bb7685430381dd17135/bikolabs.png",
+          "display": "file"
+        },
+        { "name": "Filter index", "value": 0 },
+        { "name": "Filter", "value": "mipmap" },
+        { "name": "Wrap index", "value": 2 },
+        { "name": "Wrap", "value": "repeat" },
+        { "name": "Anisotropic index", "value": 0 },
+        { "name": "Anisotropic", "value": 0 },
+        { "name": "Flip", "value": false },
+        { "name": "Pre Multiplied Alpha", "value": false },
+        { "name": "Active", "value": true },
+        { "name": "Save Memory", "value": true }
+      ],
+      "portsOut": [
+        {
+          "name": "Texture",
+          "links": [
+            {
+              "portIn": "Image",
+              "portOut": "Texture",
+              "objIn": "0afc2796-cdb5-4fed-b825-edf6e7e8b670",
+              "objOut": "997b5b5b-120b-4f24-9a4b-9267675699e2"
+            }
+          ]
+        },
+        { "name": "Width", "value": 3556 },
+        { "name": "Height", "value": 2032 },
+        { "name": "Aspect Ratio", "value": 1.75 },
+        { "name": "Loaded", "value": true },
+        { "name": "Loading", "value": false }
+      ]
+    },
+    {
+      "opId": "65e8b8a2-ba13-485f-883a-2bcf377989da",
+      "objName": "Ops.Trigger.GateTrigger",
+      "id": "12c81cd3-7093-4a75-b123-c480b03096c2",
+      "uiAttribs": {
+        "history": {
+          "createdAt": 1672772785024,
+          "createdBy": { "name": "karlosgliberal" },
+          "lastInteractionAt": 1672772785024,
+          "lastInteractionBy": { "name": "karlosgliberal" }
+        },
+        "translate": { "x": -156, "y": 540 }
+      },
+      "portsIn": [{ "name": "Execute" }, { "name": "Pass Through" }],
+      "portsOut": [
+        {
+          "name": "Trigger out",
+          "links": [
+            {
+              "portIn": "render",
+              "portOut": "Trigger out",
+              "objIn": "6bdf5c04-1bc0-45b1-b19b-6610fd23dbef",
+              "objOut": "12c81cd3-7093-4a75-b123-c480b03096c2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "opId": "7c96fee9-4c2f-45e1-a41b-096b06d286b8",
+      "objName": "Ops.Trigger.IsTriggered",
+      "id": "9164103e-384f-4f35-9fc0-7cd227c5f402",
+      "uiAttribs": {
+        "history": {
+          "createdAt": 1672772785636,
+          "createdBy": { "name": "karlosgliberal" },
+          "lastInteractionAt": 1672772785636,
+          "lastInteractionBy": { "name": "karlosgliberal" }
+        },
+        "translate": { "x": -120, "y": 180 }
+      },
+      "portsIn": [{ "name": "Trigger" }],
+      "portsOut": [
+        { "name": "Next", "value": 0 },
+        {
+          "name": "Was Triggered",
+          "links": [
+            {
+              "portIn": "Boolean",
+              "portOut": "Was Triggered",
+              "objIn": "0b0a9008-f31b-409e-9df3-2ba356de59c6",
+              "objOut": "9164103e-384f-4f35-9fc0-7cd227c5f402"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "opId": "6d123c9f-7485-4fd9-a5c2-76e59dcbeb34",
+      "objName": "Ops.Boolean.Not",
+      "id": "0b0a9008-f31b-409e-9df3-2ba356de59c6",
+      "uiAttribs": {
+        "history": {
+          "createdAt": 1672772785652,
+          "createdBy": { "name": "karlosgliberal" },
+          "lastInteractionAt": 1672772785652,
+          "lastInteractionBy": { "name": "karlosgliberal" }
+        },
+        "translate": { "x": -108, "y": 240 }
+      },
+      "portsIn": [{ "name": "Boolean" }],
+      "portsOut": [
+        {
+          "name": "Result",
+          "links": [
+            {
+              "portIn": "Pass Through",
+              "portOut": "Result",
+              "objIn": "12c81cd3-7093-4a75-b123-c480b03096c2",
+              "objOut": "0b0a9008-f31b-409e-9df3-2ba356de59c6"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "opId": "0816c999-f2db-466b-9777-2814573574c5",
+      "objName": "Ops.Trigger.TriggerReceive",
+      "id": "530e7285-1ca8-49af-a96c-73a3e4880980",
+      "uiAttribs": {
+        "title": ">Clear",
+        "history": {
+          "createdAt": 1672772785663,
+          "createdBy": { "name": "karlosgliberal" },
+          "lastInteractionAt": 1672772785663,
+          "lastInteractionBy": { "name": "karlosgliberal" }
+        },
+        "translate": { "x": -120, "y": 120 }
+      },
+      "portsIn": [{ "name": "Named Trigger", "value": "Clear" }],
+      "portsOut": [
+        {
+          "name": "Triggered",
+          "links": [
+            {
+              "portIn": "Trigger",
+              "portOut": "Triggered",
+              "objIn": "9164103e-384f-4f35-9fc0-7cd227c5f402",
+              "objOut": "530e7285-1ca8-49af-a96c-73a3e4880980"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "opId": "0816c999-f2db-466b-9777-2814573574c5",
+      "objName": "Ops.Trigger.TriggerReceive",
+      "id": "56b31436-982a-44d2-89c6-5ae1a7914991",
+      "uiAttribs": {
+        "title": ">Clear",
+        "history": {
+          "createdAt": 1672772893180,
+          "createdBy": { "name": "karlosgliberal" },
+          "lastInteractionAt": 1672772893180,
+          "lastInteractionBy": { "name": "karlosgliberal" }
+        },
+        "translate": { "x": -12, "y": -320 }
+      },
+      "portsIn": [{ "name": "Named Trigger", "value": "Clear" }],
+      "portsOut": [
+        {
+          "name": "Triggered",
+          "links": [
+            {
+              "portIn": "Reset",
+              "portOut": "Triggered",
+              "objIn": "a06d651a-ea27-4f1d-9bc9-a2b4b72941cb",
+              "objOut": "56b31436-982a-44d2-89c6-5ae1a7914991"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "opId": "0816c999-f2db-466b-9777-2814573574c5",
+      "objName": "Ops.Trigger.TriggerReceive",
+      "id": "4c86e466-b7ea-40cb-a8ff-1b050dccaf8a",
+      "uiAttribs": {
+        "title": ">mouseMoved",
+        "history": {
+          "createdAt": 1672772893187,
+          "createdBy": { "name": "karlosgliberal" },
+          "lastInteractionAt": 1672772893187,
+          "lastInteractionBy": { "name": "karlosgliberal" }
+        },
+        "translate": { "x": -72, "y": -420 }
+      },
+      "portsIn": [{ "name": "Named Trigger", "value": "mouseMoved" }],
+      "portsOut": [
+        {
+          "name": "Triggered",
+          "links": [
+            {
+              "portIn": "Reset",
+              "portOut": "Triggered",
+              "objIn": "a06d651a-ea27-4f1d-9bc9-a2b4b72941cb",
+              "objOut": "4c86e466-b7ea-40cb-a8ff-1b050dccaf8a"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "opId": "cf3544e4-e392-432b-89fd-fcfb5c974388",
+      "objName": "Ops.Trigger.TriggerOnce",
+      "id": "a06d651a-ea27-4f1d-9bc9-a2b4b72941cb",
+      "uiAttribs": {
+        "history": {
+          "createdAt": 1672772893205,
+          "createdBy": { "name": "karlosgliberal" },
+          "lastInteractionAt": 1672772893205,
+          "lastInteractionBy": { "name": "karlosgliberal" }
+        },
+        "translate": { "x": -132, "y": -220 }
+      },
+      "portsIn": [{ "name": "Exec" }, { "name": "Reset" }],
+      "portsOut": [
+        {
+          "name": "Next",
+          "links": [
+            {
+              "portIn": "exe",
+              "portOut": "Next",
+              "objIn": "bba9a224-18ba-41fd-ab1f-09f493f98047",
+              "objOut": "a06d651a-ea27-4f1d-9bc9-a2b4b72941cb"
+            }
+          ]
+        },
+        { "name": "Was Triggered", "value": 0 }
+      ]
+    },
+    {
+      "opId": "a6c66f1f-2102-4b68-882b-afd25a4da538",
+      "objName": "Ops.TimeLine.TimeLineFrame",
+      "id": "9615c0c0-2dd5-4361-a256-dab1272a8b8a",
+      "uiAttribs": {
+        "history": {
+          "createdAt": 1672773048395,
+          "createdBy": { "name": "karlosgliberal" },
+          "lastInteractionAt": 1672773048395,
+          "lastInteractionBy": { "name": "karlosgliberal" }
+        },
+        "translate": { "x": -72, "y": -560 }
+      },
+      "portsIn": [],
+      "portsOut": [
+        {
+          "name": "time",
+          "links": [
+            {
+              "portIn": "number1",
+              "portOut": "time",
+              "objIn": "4f28b484-23d1-4a68-8067-26acd8bc2bc0",
+              "objOut": "9615c0c0-2dd5-4361-a256-dab1272a8b8a"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "opId": "07701f81-1a98-44c0-b1ef-592db3cbb5d3",
+      "objName": "Ops.Gl.TextureEffects.ChromaticAberration_v2",
+      "id": "db037328-369f-4884-a43b-83908c534ffe",
+      "uiAttribs": {
+        "history": {
+          "createdAt": 1672773527516,
+          "createdBy": { "name": "karlosgliberal" },
+          "lastInteractionAt": 1672773546081,
+          "lastInteractionBy": { "name": "karlosgliberal" }
+        },
+        "translate": { "x": -132, "y": 1700 }
+      },
+      "portsIn": [
+        { "name": "render" },
+        { "name": "Blend Mode index", "value": 0 },
+        { "name": "Blend Mode", "value": "normal" },
+        { "name": "Amount", "value": 1 },
+        { "name": "Pixel", "value": 5 },
+        { "name": "Lens Distort", "value": 0.082 },
+        { "name": "Smooth", "value": true },
+        { "name": "Mask", "value": 0 }
+      ],
+      "portsOut": [{ "name": "trigger", "value": 0 }]
+    },
+    {
+      "opId": "2d2e5f0e-b69f-4789-9a48-1ee6ade5049a",
+      "objName": "Ops.Anim.RandomAnim",
+      "id": "3305562f-714b-4fd1-b9d3-ab9a2faab28b",
+      "uiAttribs": {
+        "title": "random anim",
+        "translate": { "x": 492, "y": 320 },
+        "notWorkingMsg": null,
+        "history": {
+          "lastInteractionAt": 1672774733693,
+          "lastInteractionBy": { "name": "karlosgliberal" }
+        }
+      },
+      "portsIn": [
+        { "name": "exe" },
+        { "name": "min", "value": -1 },
+        { "name": "max", "value": 1 },
+        { "name": "random seed", "value": 1.27 },
+        { "name": "duration", "value": 0.2 },
+        { "name": "pause between", "value": 0 },
+        { "name": "easing index", "value": 0 },
+        { "name": "easing", "value": "smootherstep" }
+      ],
+      "portsOut": [
+        { "name": "Next", "value": 0 },
+        {
+          "name": "result",
+          "links": [
+            {
+              "portIn": "Value",
+              "portOut": "result",
+              "objIn": "e7a69e1f-a7d2-4bc1-bd58-3c07a4bbe7cb",
+              "objOut": "3305562f-714b-4fd1-b9d3-ab9a2faab28b"
+            },
+            {
+              "portIn": "Value",
+              "portOut": "result",
+              "objIn": "b61d0e7f-3e58-4ebd-bca0-f8cf980495dd",
+              "objOut": "3305562f-714b-4fd1-b9d3-ab9a2faab28b"
+            }
+          ]
+        },
+        {
+          "name": "Looped",
+          "links": [
+            {
+              "portIn": "Trigger",
+              "portOut": "Looped",
+              "objIn": "4d55a2b2-6d78-4d50-be5c-a42ff2db760d",
+              "objOut": "3305562f-714b-4fd1-b9d3-ab9a2faab28b"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "opId": "736d3d0e-c920-449e-ade0-f5ca6018fb5c",
+      "objName": "Ops.Anim.SineAnim",
+      "id": "dce22f8f-7e9c-4a6b-9b4c-b36cc17dedeb",
+      "uiAttribs": {
+        "history": {
+          "createdAt": 1672774363999,
+          "createdBy": { "name": "karlosgliberal" },
+          "lastInteractionAt": 1672781597749,
+          "lastInteractionBy": { "name": "karlosgliberal" }
+        },
+        "translate": { "x": 492, "y": 240 }
+      },
+      "portsIn": [
+        { "name": "exe" },
+        { "name": "Mode index", "value": 0 },
+        { "name": "Mode", "value": "Cosine" },
+        { "name": "phase", "value": 0 },
+        { "name": "frequency", "value": 3 },
+        { "name": "amplitude", "value": 0.2 }
+      ],
+      "portsOut": [
+        {
+          "name": "Trigger out",
+          "links": [
+            {
+              "portIn": "exe",
+              "portOut": "Trigger out",
+              "objIn": "3305562f-714b-4fd1-b9d3-ab9a2faab28b",
+              "objOut": "dce22f8f-7e9c-4a6b-9b4c-b36cc17dedeb"
+            }
+          ]
+        },
+        { "name": "result", "value": 0.190844130980277 }
+      ]
+    },
+    {
+      "opId": "ce1eaf2b-943b-4dc0-ab5e-ee11b63c9ed0",
+      "objName": "Ops.Trigger.TriggerSend",
+      "id": "4d55a2b2-6d78-4d50-be5c-a42ff2db760d",
+      "uiAttribs": {
+        "title": ">mouseMoved",
+        "history": {
+          "createdAt": 1663023201930,
+          "createdBy": { "name": "bbbbbgdn" },
+          "lastInteractionAt": 1663023210876,
+          "lastInteractionBy": { "name": "bbbbbgdn" }
+        },
+        "translate": { "x": 528, "y": 500 }
+      },
+      "portsIn": [
+        { "name": "Trigger" },
+        { "name": "Named Trigger", "value": "mouseMoved" }
+      ],
+      "portsOut": []
+    },
+    {
+      "opId": "65e8b8a2-ba13-485f-883a-2bcf377989da",
+      "objName": "Ops.Trigger.GateTrigger",
+      "id": "e6a28bc7-7556-43b9-96bb-436d524fe316",
+      "uiAttribs": {
+        "history": {
+          "createdAt": 1672775009199,
+          "createdBy": { "name": "karlosgliberal" },
+          "lastInteractionAt": 1672775009199,
+          "lastInteractionBy": { "name": "karlosgliberal" }
+        },
+        "translate": { "x": -216, "y": -300 }
+      },
+      "portsIn": [{ "name": "Execute" }, { "name": "Pass Through" }],
+      "portsOut": [
+        {
+          "name": "Trigger out",
+          "links": [
+            {
+              "portIn": "Reset",
+              "portOut": "Trigger out",
+              "objIn": "a06d651a-ea27-4f1d-9bc9-a2b4b72941cb",
+              "objOut": "e6a28bc7-7556-43b9-96bb-436d524fe316"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "opId": "f5c858a2-2654-4108-86fe-319efa70ecec",
+      "objName": "Ops.Math.FlipSign",
+      "id": "d073d8c3-5bd3-4c17-8473-e9d7368bc5b7",
+      "uiAttribs": {
+        "history": {
+          "createdAt": 1672775082453,
+          "createdBy": { "name": "karlosgliberal" },
+          "lastInteractionAt": 1672775082453,
+          "lastInteractionBy": { "name": "karlosgliberal" }
+        },
+        "translate": { "x": -276, "y": 460 }
+      },
+      "portsIn": [{ "name": "Value" }],
+      "portsOut": [
+        {
+          "name": "Result",
+          "links": [
+            {
+              "portIn": "new min",
+              "portOut": "Result",
+              "objIn": "e4f730fd-6fe7-4e8b-9500-711173a492ce",
+              "objOut": "d073d8c3-5bd3-4c17-8473-e9d7368bc5b7"
+            },
+            {
+              "portIn": "new min",
+              "portOut": "Result",
+              "objIn": "1799d51d-bebe-4dfe-8f41-a104fb2388c9",
+              "objOut": "d073d8c3-5bd3-4c17-8473-e9d7368bc5b7"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "opId": "0f203337-e13c-47ec-a09f-b309212540b0",
+      "objName": "Ops.Math.Delta",
+      "id": "b61d0e7f-3e58-4ebd-bca0-f8cf980495dd",
+      "uiAttribs": {
+        "history": {
+          "createdAt": 1672775127743,
+          "createdBy": { "name": "karlosgliberal" },
+          "lastInteractionAt": 1672775127743,
+          "lastInteractionBy": { "name": "karlosgliberal" }
+        },
+        "translate": { "x": 24, "y": 840 }
+      },
+      "portsIn": [
+        { "name": "Value" },
+        { "name": "Change Always", "value": false },
+        { "name": "Reset", "value": null }
+      ],
+      "portsOut": [
+        {
+          "name": "Delta",
+          "links": [
+            {
+              "portIn": "value",
+              "portOut": "Delta",
+              "objIn": "e4f730fd-6fe7-4e8b-9500-711173a492ce",
+              "objOut": "b61d0e7f-3e58-4ebd-bca0-f8cf980495dd"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "opId": "9fa3fc46-3147-4e3a-8ee8-a93ea9e8786e",
+      "objName": "Ops.Devices.Mouse.Mouse_v2",
+      "id": "f662268b-60ec-44fd-84fc-a1006f41aa56",
+      "uiAttribs": {
+        "history": {
+          "createdAt": 1672775257673,
+          "createdBy": { "name": "karlosgliberal" },
+          "lastInteractionAt": 1672775257673,
+          "lastInteractionBy": { "name": "karlosgliberal" }
+        },
+        "translate": { "x": -708, "y": -1120 }
+      },
+      "portsIn": [
+        { "name": "Active", "value": true },
+        { "name": "relative", "value": false },
+        { "name": "normalize", "value": false },
+        { "name": "flip y", "value": true },
+        { "name": "Area index", "value": 0 },
+        { "name": "Area", "value": "Document" },
+        { "name": "right click prevent default", "value": true },
+        { "name": "Touch support", "value": true },
+        { "name": "smooth", "value": false },
+        { "name": "smoothSpeed", "value": 20 },
+        { "name": "multiply", "value": 1 }
+      ],
+      "portsOut": [
+        { "name": "x", "value": 574 },
+        { "name": "y", "value": 913 },
+        { "name": "button down", "value": 0 },
+        { "name": "click", "value": 0 },
+        { "name": "Button Up", "value": 0 },
+        {
+          "name": "click right",
+          "links": [
+            {
+              "portIn": "trigger",
+              "portOut": "click right",
+              "objIn": "52ff8fbd-88d9-48f0-9183-d3e497450eeb",
+              "objOut": "f662268b-60ec-44fd-84fc-a1006f41aa56"
+            }
+          ]
+        },
+        { "name": "mouseOver", "value": 1 },
+        { "name": "button", "value": 0 }
+      ]
+    },
+    {
+      "opId": "19b441eb-9f63-4f35-ba08-b87841517c4d",
+      "objName": "Ops.Gl.ClearColor",
+      "id": "5e6571b8-4a9d-4e5e-9901-891758c6d2f8",
+      "uiAttribs": {
+        "history": {
+          "createdAt": 1684743250353,
+          "createdBy": { "name": "karlosgliberal" },
+          "lastInteractionAt": 1684743255001,
+          "lastInteractionBy": { "name": "karlosgliberal" }
+        },
+        "translate": { "x": -132, "y": -940 }
+      },
+      "portsIn": [
+        { "name": "render" },
+        { "name": "r", "value": 1 },
+        { "name": "g", "value": 0.9996395111083984 },
+        { "name": "b", "value": 0.9996395111083984 },
+        { "name": "a", "value": 1 }
+      ],
+      "portsOut": [
+        {
+          "name": "trigger",
+          "links": [
+            {
+              "portIn": "exe",
+              "portOut": "trigger",
+              "objIn": "6397a647-4de4-4b6e-81bb-35152e6f4c74",
+              "objOut": "5e6571b8-4a9d-4e5e-9901-891758c6d2f8"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "users": ["63566672759d5b03cd7f1728"],
+  "usersReadOnly": [],
+  "userOps": [],
+  "tags": ["pixel", "pixel displacement", "touch", "photo", "glitch", "glitch"],
+  "_id": "646b1bb7685430381dd17135",
+  "name": "Glich_bikolabs",
+  "description": "RMB-click or two-finder tap for options",
+  "userId": "5c54b23eff421922c466b2c7",
+  "created": "2023-05-22T07:37:27.142Z",
+  "cloneOf": "63b47272c6a183d534cc3ac9",
+  "updated": "2023-05-22T08:14:18.108Z",
+  "log": [
+    {
+      "_id": "646b1bb7685430381dd17137",
+      "key": "collabsatcreate",
+      "text": "initial list of collaborators:"
+    }
+  ],
+  "__v": 6,
+  "shortId": "tb4p2x",
+  "buildInfo": {
+    "core": {
+      "timestamp": 1682341866190,
+      "created": "2023-04-24T13:11:06.190Z",
+      "git": {
+        "branch": "master",
+        "commit": "a8912bdbb85d335fb4b58c228bba4c8be8498ebd",
+        "date": "2023-04-24T13:08:49.000Z",
+        "message": "fix duplicate ids"
+      }
+    },
+    "ui": {
+      "timestamp": 1682341878679,
+      "created": "2023-04-24T13:11:18.679Z",
+      "git": {
+        "branch": "master",
+        "commit": "92f3441db14505cdeafaf68ec0c717954f18584c",
+        "date": "2022-12-16T15:16:18.000Z",
+        "message": "do not show \"automated error report\" to admin users - pandrr/cables/issues/4193"
+      }
+    },
+    "host": "cables.gl"
+  },
+  "opsHash": "77af7a55a4035dff1e481c6c40183d8487335b24",
+  "ui": {
+    "timeLineLength": 20,
+    "bookmarks": [],
+    "viewBoxesGl": {
+      "0": {
+        "x": 141.93399999999997,
+        "y": 284.7218844984802,
+        "z": 1452.2984042553192
+      }
+    },
+    "renderer": { "w": 841, "h": 619, "s": 1 }
+  },
+  "updatedByUser": "karlosgliberal",
+  "deployments": {
+    "lastDeployment": { "date": 1684741198935, "service": "download" }
+  },
+  "exports": 2,
+  "cachedUsername": "karlosgliberal"
+}
